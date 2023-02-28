@@ -1,43 +1,36 @@
-import React from 'react';
-import styles from './sideNavBar.css';
+import React, { useState } from "react";
+import styles from "./sideNavBar.css";
+import "font-awesome/css/font-awesome.min.css";
 
-const SideNavBar = () => (
-  <div className={styles.SideNavBar}>
-   <div className="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button className="dropdown-btn">Dropdown
-    <i className="fa fa-caret-down"></i>
-  </button>
-  <div className="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <a href="#contact">Search</a>
-</div>
-  </div>
-);
+const SideNavBar = () => {
+  let [activeDropdown, setActiveDropdown] = useState(false);
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+  let handleDropdownClick = () => {
+    setActiveDropdown(!activeDropdown);
+  };
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-
-SideNavBar.propTypes = {};
-
-SideNavBar.defaultProps = {};
+  return (
+    <div className={styles.SideNavBar}>
+      <div className="sidenav">
+        <a href="/">Home</a>
+        <div className="line"></div>
+        <button
+          className={`dropdown-btn ${activeDropdown ? "active" : ""}`}
+          onClick={handleDropdownClick}
+        >
+          SandBox
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className={`dropdown-container ${activeDropdown ? "show" : ""}`}>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div className="line"></div>
+        <a href="/about">Sobre mim</a>
+      </div>
+    </div>
+  );
+};
 
 export default SideNavBar;

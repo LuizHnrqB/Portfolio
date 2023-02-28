@@ -1,16 +1,13 @@
-import './App.css';
-import SideNavBar from './components/sideNavBar/sideNavBar';
+import "./App.css";
+import SideNavBar from "./components/sideNavBar/sideNavBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        </header>
-        <body>    
-          <div>
-          <SideNavBar></SideNavBar>
-          </div>     
-        </body>
+      <header className="App-header"></header>
+      <div>
+        <SideNavBar></SideNavBar>
+      </div>
     </div>
   );
 }
