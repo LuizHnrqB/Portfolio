@@ -1,0 +1,41 @@
+.fotoPerfil {
+  order: 2;
+  width: 160px;
+  height: 200px;
+  box-shadow: 2px 2px black;
+  border-radius: 12px;
+}
+.imgContainer {
+  align-self: center;
+  width: 300px;
+  height: 220px;
+  box-shadow: 200px;
+  border-color: 1px aquamarine;
+  margin-left: 25px;
+}
+.resumoContainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.resumo {
+  order: 1;
+  margin-left: 220px;
+  margin-right: 20px;
+  border-color: rgb(71, 69, 69);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: beige;
+  padding: 60px;
+}
+
+.fundo {
+  background-color: #282c34;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.title {
+  color: #ffff;
+}
