@@ -1,0 +1,16 @@
+.btn {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.startContainer {
+  background-color: rgb(68, 187, 255);
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+.errorGen {
+  background-color: rgb(68, 187, 255);
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}

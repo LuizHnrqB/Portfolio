@@ -1,4 +1,20 @@
-div {
+.container {
   display: flex;
-  grid-auto-flow: row;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 230px;
+}
+.cp {
+  width: 200px;
+  flex-shrink: 3;
+  order: 1;
+  margin-top: 120px;
+}
+.wb {
+  flex-shrink: 3;
+  order: 2;
+}
+body {
+  margin-left: 230px;
 }

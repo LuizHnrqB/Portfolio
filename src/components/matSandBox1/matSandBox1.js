@@ -1,10 +1,8 @@
 import { React, useState } from "react";
 import "./matSandBox1.css";
 import { FiAlertCircle } from "react-icons/fi";
-import Home from "../../Pages/home";
 
 const MatSandBox1 = () => {
-  const [isShown, setIsShown] = useState(false);
   const [temp, setTemp] = useState(0);
   const [count, setCount] = useState(0);
 
@@ -26,7 +24,6 @@ const MatSandBox1 = () => {
         <div>
           <h1 className="aguaTitle">
             Mini-game: Não deixe a água fever! <FiAlertCircle />
-            {isShown && <Home />}
           </h1>
         </div>
         <p>Clique o máximo de vezes, mas não deixe a água ferver!</p>
