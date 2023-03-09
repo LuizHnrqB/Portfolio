@@ -5,10 +5,10 @@ import ChoosePokemon from "../../components/choosePokemon/choosePokemon";
 export const SandBox1 = () => {
   return (
     <div className="container">
-      <body>
+      <div>
         <MatSandBox1 className="wB" />
         <ChoosePokemon className="cP" />
-      </body>
+      </div>
     </div>
   );
 };
